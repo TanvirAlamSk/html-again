@@ -9,14 +9,64 @@
         display: block;
         margin-bottom: 10px;
       }
+      .radiotypeinput,
+      .checkboxtypeinput {
+        display: inline;
+      }
     </style>
   </head>
   <body>
     <form>
       <label>Enter Your Name: </label>
-      <input type="text" />
-      <input type="color" value="#ffffff" />
-      <input >
+      <input type="text" width="500px" />
+      <input type="color" value="#ff0000" />
+      <input type="date" value="" />
+      <input type="time" />
+      <input type="datetime-local" />
+      <input type="file" />
+      <input type="hidden" />
+      <input type="range" min="0" max="100" step="10" style="width: 500px" />
+      <label>You can choose only one</label><br />
+      <input class="radiotypeinput" type="radio" name="vehicle" value="Car" />
+      <label>Car</label><br />
+      <input class="radiotypeinput" type="radio" name="vehicle" value="Bike" />
+      <label>Bike</label><br />
+      <input class="radiotypeinput" type="radio" name="vehicle" value="Bus" />
+      <label>Bus</label><br />
+      <label>Choose Your Subject</label><br />
+      <input
+        class="checkboxtypeinput"
+        type="checkbox"
+        name="subject"
+        value="Bangla"
+      />
+      <label>Bangla</label><br />
+      <input
+        class="checkboxtypeinput"
+        type="checkbox"
+        name="subject"
+        value="English"
+      />
+      <label>English</label><br />
+      <input
+        class="checkboxtypeinput"
+        type="checkbox"
+        name="subject"
+        value="Mathematics"
+      />
+      <label>Mathematics</label><br />
+      <input
+        class="checkboxtypeinput"
+        type="checkbox"
+        name="subject"
+        value="Physics"
+      />
+      <label>Physics</label><br />
+      <input type="search" />
     </form>
+    <p>
+      সার্চ ইঞ্জিনগুলো আপনার ওয়েবসাইটের কন্টেন্ট সঠিকভাবে বুঝতে পারে যদি
+      এনকোডিং স্পষ্টভাবে সেট করা থাকে।
+    </p>
   </body>
 </html>
